@@ -59,7 +59,9 @@ docker run \
   -e KC_HTTPS_CERTIFICATE_KEY_FILE=/opt/keycloak/conf/server.key.pem \
   -v $PWD/server.crt.pem:/opt/keycloak/conf/server.crt.pem \
   -v $PWD/server.key.pem:/opt/keycloak/conf/server.key.pem \
-  -p 8443:8443 -d \
+  -p 8443:8443 \
+  -h keycloak \
+  --network flask_network -d \
   quay.io/keycloak/keycloak:25.0.2 \
   start-dev || handle_error "Failed to run Keycloak in Docker"
 
