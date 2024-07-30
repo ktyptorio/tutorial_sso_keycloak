@@ -38,12 +38,17 @@ Panduan ini akan memandu Anda melalui proses pengaturan dan penggunaan Keycloak 
    sudo git clone https://github.com/ktyptorio/tutorial_sso_keycloak.git
    ```
 
-2. Navigasi ke direktori yang telah di-clone dan jalankan Docker Compose:
+2. Buat Docker network:
    ```bash
-   bash keycloak_docker.sh
+   sudo docker network create flask_network
    ```
 
-3. Akses Keycloak melalui browser Anda di `https://<IP>:8443/`
+3. Navigasi ke direktori yang telah di-clone dan jalankan Docker Compose:
+   ```bash
+   sudo bash keycloak_docker.sh
+   ```
+
+4. Akses Keycloak melalui browser Anda di `https://<IP>:8443/`
 
 ## Halaman Login Admin Keycloak
 
