@@ -74,22 +74,20 @@ Panduan ini akan memandu Anda melalui proses pengaturan dan penggunaan Keycloak 
 ## Memperbarui Client Secret di file .env
 
 1. Masuk ke folder tutorial_sso_keycloak/
-   
-   `cd tutorial_sso_keycloak/`
+   ```bash
+   cd tutorial_sso_keycloak/
+   ```
 2. Buka file .env dengan menggunakan text editor di Linux
-   
-   `sudo nano .env`
+   ```bash
+   sudo nano .env
 3. Ubah variabel `KEYCLOAK_CLIENT_SECRET` dan `HOSTNAME`
-   
-   `KEYCLOAK_CLIENT_SECRET`=masukkan client secret dari keycloak di sini
-   
-   `HOSTNAME`=masukkan IP dari VM Anda yang bisa diakses
+   ```bash
+   KEYCLOAK_CLIENT_SECRET=masukkan client secret dari keycloak di sini
+   HOSTNAME=masukkan IP dari VM Anda yang bisa diakses
 4. Simpan file .env Anda
-   
+   ```bash
    Tekan tombol `Ctrl + x`
-   
    Ketik `Y`
-   
    Lalu, Enter
 
 ## Menjalankan Aplikasi Web
